@@ -68,7 +68,6 @@ public class Enseignant extends Personne {
             if (s.getMyUE().equals(ueCherchee)) {
                 retour = s;
             }
-            if 
         }
         return retour;
     }

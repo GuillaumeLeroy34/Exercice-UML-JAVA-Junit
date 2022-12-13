@@ -14,6 +14,8 @@ public class ServicePrevu {
         this.heuresTD = 0;
     }
 
+    
+
     public ServicePrevu(int heuresCM, int heuresTP, int heuresTD, UE ue) {
         this.heuresCM = heuresCM;
         this.heuresTP = heuresTP;

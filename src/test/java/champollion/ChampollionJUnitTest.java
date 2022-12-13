@@ -1,18 +1,22 @@
 package champollion;
 
-import org.junit.jupiter.api.*;
-import static org.junit.jupiter.api.Assertions.*;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 public class ChampollionJUnitTest {
 
     Enseignant untel;
     UE uml, java;
-
+     ServicePrevu serviceUML;
     @BeforeEach
     public void setUp() {
         untel = new Enseignant("untel", "untel@gmail.com");
         uml = new UE("UML");
         java = new UE("Programmation en java");
+        
     }
 
     @Test
@@ -36,15 +40,8 @@ public class ChampollionJUnitTest {
                 "L'enseignant doit maintenant avoir 30 heures prévues pour l'UE 'uml'");
 
     }
-    
-    @Test 
-    public void testTrouverParUe(UE ueParam){
-        
-        untel.ajouteEnseignement(uml, 10, 5, 0);
-        
-        
-    }
-    
+
+
     @Test
 
     public void testEstEnSousService() {
@@ -81,7 +78,5 @@ public class ChampollionJUnitTest {
                 "le nombre d'heure ne prend pas en compte toutes les UE");
 
     }
-    
-    
 
 }
