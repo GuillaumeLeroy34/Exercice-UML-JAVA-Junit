@@ -1,7 +1,5 @@
 package champollion;
 
-import static java.lang.Math.round;
-
 public class ServicePrevu {
 
     private UE myUE;

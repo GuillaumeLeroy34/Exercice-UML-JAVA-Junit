@@ -22,7 +22,7 @@ public class Enseignant extends Personne {
      * enseignant, arrondi à l'entier le plus proche
      *
      */
-    public int heuresPrevues() { // ☺
+    public int heuresPrevues() { //
         int retour = 0;
         for (ServicePrevu e : service) {
             retour += e.equivalentTD();
@@ -68,6 +68,7 @@ public class Enseignant extends Personne {
             if (s.getMyUE().equals(ueCherchee)) {
                 retour = s;
             }
+            if 
         }
         return retour;
     }
